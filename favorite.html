@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <script src="https://kit.fontawesome.com/45f8711e96.js" crossorigin="anonymous"></script>
+  <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <title>User List</title>
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" id="navbar-title" href="#">User List</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" id="navbar-content" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="navbar-content" href="favorite.html">Friend List</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+<!-- container -->
+  <div class="container mt-5">
+    <!-- search bar -->
+    <div class="row">
+      <form class="row row-cols-lg-auto g-3 mb-2 align-items-center" id="search-form">
+        <div class="col-12">
+          <label class="visually-hidden" for="search-input"
+            >Search Keyword</label
+          >
+          <input
+              type="text"
+              class="form-control"
+              id="search-input"
+              placeholder="Keyword..."
+          />
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary" id="search-submit">Search</button>
+        </div>
+      </form>
+    </div>
+    
+    <div class="row" id="data-panel">
+     <!-- render user list -->
+   </div>
+  </div>
+
+<!-- Pagination -->
+  <nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center" id="paginator"></ul>
+  </nav>
+
+<!-- user modal -->
+  <div class="modal fade" id="user-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="user-modal-title">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body d-flex justify-content-around align-items-center" id="user-modal-body">
+          <div class="row">
+            <div class="col-sm-6" id="user-modal-avatar"></div>
+            <div class="col-sm-6 mt-5">
+              <p id="user-modal-gender"></p>
+              <p id="user-modal-birthday"></p>
+              <p id="user-modal-age"></p>
+              <p id="user-modal-region"></p>
+              <p id="user-modal-email"></p>
+             </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+     </div>
+   </div>
+  </div>
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous">
+  </script>
+  <script src="./favorite.js"></script>
+</body>
+
+</html>

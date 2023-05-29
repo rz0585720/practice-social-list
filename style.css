@@ -1,0 +1,61 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #06283d;
+}
+
+.navbar {
+  background-color: #3a6688;
+  border: 1px solid;
+}
+
+#navbar-title {
+  font-size: 30px;
+}
+
+#navbar-content {
+  font-size: 20px;
+}
+
+#navbar-title:hover,
+#navbar-content:hover {
+  color: #ff6600;
+}
+
+#data-panel {
+  position: relative;
+}
+
+.card:hover::before {
+  position: absolute;
+  top: 0px;
+  left: -90px;
+  color: #fff;
+  font-size: .8em;
+  background: #346e7a;
+  padding: 5px;
+  border-radius: 5px;
+  content: "Click for more information.";
+}
+
+.follow-star {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 20px;
+  color: rgba(120, 120, 120, 0.2);
+}
+
+.checked {
+  color: #f5de4d;
+}
