@@ -1,6 +1,6 @@
-const BASE_URL = "https://user-list.alphacamp.io";
-const INDEX_URL = BASE_URL + "/api/v1/users/";
-const users = [];
+const BASE_URL = "https://user-list.alphacamp.io"
+const INDEX_URL = BASE_URL + "/api/v1/users/"
+const users = []
 let filterUser = []
 const friendList = JSON.parse(localStorage.getItem('friendList')) || []
 const USER_PER_PAGE = 21
